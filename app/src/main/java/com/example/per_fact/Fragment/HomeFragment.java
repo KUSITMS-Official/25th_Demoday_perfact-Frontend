@@ -189,13 +189,13 @@ public class HomeFragment extends Fragment {
 //        calendarView.addDecorators(new DayDecorator(getActivity().getApplicationContext()));
 //
 //
-//        //일정 추가 버튼 클릭시(오른쪽 하단)
-//        schedule_add_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                mainActivity.change_to_RoadFragment();
-//            }
-//        });
+        //일정 추가 버튼 클릭시(오른쪽 하단)
+        schedule_add_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainActivity.change_to_RoadFragment();
+            }
+        });
 
         //TODAY 스케줄//
         //TODAY 스케줄 옵션 클릭시

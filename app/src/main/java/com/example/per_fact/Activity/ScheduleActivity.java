@@ -325,7 +325,7 @@ public class ScheduleActivity extends AppCompatActivity {
 
                     }
                 }, // 값설정시 호출될 리스너 등록
-                        12, 30, false); // 기본값 시분 등록
+                        18, 30, false); // 기본값 시분 등록
                 dialog.setTitle("시간 설정");
                 dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                 return dialog;
