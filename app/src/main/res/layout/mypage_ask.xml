@@ -136,7 +136,11 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:hint="osj8528@gmail.com"
+=======
+            android:hint="Kusitms12345@gmail.com."
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
             android:textColor="#4D4D4D"
             android:background="@drawable/layout_border"
             android:textSize="14dp"

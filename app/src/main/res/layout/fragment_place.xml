@@ -3,12 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:orientation="vertical">
+=======
+    android:orientation="vertical"
+    android:id="@+id/place_fragment">
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+<<<<<<< HEAD
         android:layout_margin="20dp">
 
 
@@ -20,21 +26,43 @@
                 android:textColor="@color/black"
                 android:textSize="25dp"/>
 
+=======
+        android:padding="15dp">
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_gravity="top|start"
             android:layout_marginStart="2dp"
             android:layout_marginTop="5dp"
             android:text="퍼펙트한 나만의 맛집을 찾아보세요!"
             android:textSize="15dp" />
 
+=======
+            android:text="장소 탐색"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="퍼펙트한 나만의 맛집을 찾아보세요!"
+            android:textSize="15dp"
+            android:layout_margin="10dp"/>
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+<<<<<<< HEAD
             android:layout_marginTop="20dp"
+=======
+            android:layout_marginTop="10dp"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
             android:background="@drawable/searchfilter">
 
             <RelativeLayout
@@ -52,8 +80,13 @@
 
                 <Button
                     android:id="@+id/search_location"
+<<<<<<< HEAD
                     android:layout_width="wrap_content"
                     android:layout_height="15dp"
+=======
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:layout_marginRight="5dp"

@@ -42,6 +42,7 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/edittext_bg"/>
 
+<<<<<<< HEAD
     <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_passwd"
             android:layout_width="match_parent"
@@ -51,6 +52,15 @@
             android:inputType="textPassword"
             android:background="@drawable/edittext_bg"/>
 
+=======
+    <EditText
+        android:id="@+id/et_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력해주세요."
+        android:background="@drawable/edittext_bg"
+        android:padding="15dp"/>
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
     <TextView
         android:layout_width="wrap_content"

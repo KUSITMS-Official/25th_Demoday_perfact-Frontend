@@ -24,12 +24,19 @@ import java.lang.reflect.Array;
 
 public class CompleteActivity extends AppCompatActivity {
     Button gotohome;
+<<<<<<< HEAD
     TextView start_prepare;
+=======
+    TextView start_prepare, et_place;
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
     int prepareTime, startHour, startMin;
     String startDate, suggestInfo;
     int transportMin = 47;
     int[] startInfo = {startHour, startMin};
+<<<<<<< HEAD
     MainActivity mainActivity;
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +44,10 @@ public class CompleteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_complete);
 
         gotohome = findViewById(R.id.gotoHome);
+<<<<<<< HEAD
+=======
+        et_place = findViewById(R.id.et_place);
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         start_prepare = findViewById(R.id.start_prepare);
 
 
@@ -114,5 +125,17 @@ public class CompleteActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+=======
+        et_place.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CompleteActivity.this, PlaceFragment.class);
+
+
+            }
+        });
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
     }
 }

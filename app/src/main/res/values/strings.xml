@@ -2,6 +2,7 @@
     <string name="app_name">Per_fact</string>
     <string name="myappKey">65bc0a00e39a110622beea2c826212d6</string>
 
+<<<<<<< HEAD
 <!--    달력 요일/월 변경-->
     <string-array name="custom_weekdays">
         <item>M</item>
@@ -27,4 +28,6 @@
         <item>11월</item>
         <item>12월</item>
     </string-array>
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 </resources>

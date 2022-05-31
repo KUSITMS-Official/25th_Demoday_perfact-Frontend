@@ -295,7 +295,11 @@ public class ScheduleActivity extends AppCompatActivity {
 
                     }
                 }, // 값설정시 호출될 리스너 등록
+<<<<<<< HEAD
                         12, 30, false); // 기본값 시분 등록
+=======
+                        4, 19, false); // 기본값 시분 등록
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 dialog.setTitle("시간 설정");
                 dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                 return dialog;
@@ -325,7 +329,11 @@ public class ScheduleActivity extends AppCompatActivity {
 
                     }
                 }, // 값설정시 호출될 리스너 등록
+<<<<<<< HEAD
                         18, 30, false); // 기본값 시분 등록
+=======
+                        4, 19, false); // 기본값 시분 등록
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 dialog.setTitle("시간 설정");
                 dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                 return dialog;

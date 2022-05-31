@@ -113,6 +113,10 @@
                 android:layout_height="30dp"/>
 
         </LinearLayout>
+<<<<<<< HEAD
+=======
+        //
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -122,7 +126,11 @@
             android:background="@drawable/line_sample"
             >
             <ImageView
+<<<<<<< HEAD
                 android:background="@drawable/ic_logout"
+=======
+                android:background="@drawable/ic_mypage2"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:layout_gravity="center"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -146,6 +154,10 @@
                 android:layout_height="30dp"/>
 
         </LinearLayout>
+<<<<<<< HEAD
+=======
+        //
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,7 +167,11 @@
             android:background="@drawable/line_sample"
             >
             <ImageView
+<<<<<<< HEAD
                 android:background="@drawable/ic_answer"
+=======
+                android:background="@drawable/ic_mypage2"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:layout_gravity="center"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -179,6 +195,10 @@
                 android:layout_height="30dp"/>
 
         </LinearLayout>
+<<<<<<< HEAD
+=======
+        //
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,7 +208,11 @@
             android:background="@drawable/line_sample"
             >
             <ImageView
+<<<<<<< HEAD
                 android:background="@drawable/ic_logout"
+=======
+                android:background="@drawable/ic_mypage2"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:layout_gravity="center"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -212,6 +236,11 @@
                 android:layout_height="30dp"/>
 
         </LinearLayout>
+<<<<<<< HEAD
+=======
+        //
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
     </LinearLayout>
 

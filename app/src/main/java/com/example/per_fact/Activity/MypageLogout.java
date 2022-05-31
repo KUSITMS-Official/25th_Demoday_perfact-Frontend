@@ -1,9 +1,13 @@
 package com.example.per_fact.Activity;
 
 import android.app.Activity;
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+=======
+import android.os.Bundle;
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 import android.view.Window;
 import android.widget.Button;
 
@@ -27,6 +31,7 @@ public class MypageLogout extends Activity {
         btn_cancel = (Button) findViewById(R.id.button);
         btn_logout = (Button) findViewById(R.id.button2);
 
+<<<<<<< HEAD
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,4 +46,14 @@ public class MypageLogout extends Activity {
 //        //안드로이드 백버튼 막기
 //        return;
 //    }
+=======
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        //안드로이드 백버튼 막기
+        return;
+    }
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 }

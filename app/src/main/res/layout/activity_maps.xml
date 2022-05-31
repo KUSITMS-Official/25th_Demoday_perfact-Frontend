@@ -8,9 +8,15 @@
         android:id="@+id/topContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:background="#4989E8"
         android:orientation="vertical"
         android:padding="20dp"
+=======
+        android:background="#4887E7"
+        android:orientation="vertical"
+        android:padding="15dp"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         android:layout_weight="1">
 
         <LinearLayout
@@ -18,6 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
+<<<<<<< HEAD
             >
 
             <ImageButton
@@ -27,6 +34,15 @@
                 android:background="#4989E8"
                 android:layout_gravity="start|center"
                 android:paddingEnd="15dp"
+=======
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4887E7"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:src="?attr/actionModeCloseDrawable"
                 app:tint="@color/white" />
 
@@ -37,7 +53,11 @@
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="20dp"
+<<<<<<< HEAD
                 />
+=======
+                android:paddingLeft="10dp"/>
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
         </LinearLayout>
 
@@ -51,25 +71,37 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/et_shape"
                 android:hint="집 주소를 입력해주세요."
+<<<<<<< HEAD
                 android:padding="10dp"
                 android:layout_marginTop="10dp"/>
+=======
+                android:padding="10dp" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
             <ImageButton
                 android:id="@+id/btnSearch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+<<<<<<< HEAD
                 android:paddingTop="5dp"
                 android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/search"
                 android:layout_marginRight="5dp" />
+=======
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#CBDBF6"
+                android:src="@drawable/search" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
             <TextView
                 android:id="@+id/tv_complete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/et_home"
+<<<<<<< HEAD
                 android:layout_marginTop="20dp"
                 android:text="주소 확인 후 집 등록을 완료하세요!"
                 android:textColor="@color/white"
@@ -77,6 +109,14 @@
                 android:visibility="gone"/>
 
 
+=======
+                android:text="주소 확인 후 집 등록을 완료하세요!"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:visibility="gone"/>
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
             <Button
                 android:id="@+id/btnAdmin"
                 android:layout_width="wrap_content"
@@ -84,9 +124,14 @@
                 android:layout_below="@+id/btnSearch"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
+<<<<<<< HEAD
                 android:text="집 등록하기"
                 android:textStyle="bold"
                 android:background="@drawable/shape"
+=======
+                android:background="@drawable/shape"
+                android:text="집 등록하기"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:textColor="@color/white"
                 android:visibility="gone" />
         </RelativeLayout>

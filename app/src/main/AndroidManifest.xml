@@ -23,9 +23,12 @@
             android:exported="true" >
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".Activity.CheckListActivity"
             android:exported="false" />
         <activity
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
             android:name=".Activity.MainActivity"
             android:exported="true">
         </activity>
@@ -50,6 +53,14 @@
             android:name=".Activity.CompleteActivity"
             android:exported="true" />
 
+<<<<<<< HEAD
+=======
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/myappKey" />
+
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         <!--        마이페이지액티비티들선언-->
         <activity
             android:name=".Activity.MypageAsk"
@@ -60,9 +71,15 @@
         <activity
             android:name=".Activity.MypageLogout"
             android:theme="@android:style/Theme.Dialog" />
+<<<<<<< HEAD
         <activity
             android:name=".Activity.MypagePlace"
             android:exported="true"  />
+=======
+
+
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"

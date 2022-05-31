@@ -9,27 +9,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:background="#4989E8"
         android:orientation="vertical">
+=======
+        android:background="#4887E7"
+        android:orientation="vertical"
+        android:padding="15dp">
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="지도"
+<<<<<<< HEAD
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             />
+=======
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:paddingLeft="10dp"/>
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+<<<<<<< HEAD
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp">
+=======
+            android:layout_marginTop="10dp">
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
             <RelativeLayout
                 android:layout_width="350dp"
@@ -39,17 +55,24 @@
                     android:id="@+id/et_startStation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:padding="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/blue_background"
                     android:textSize="16dp"
                     android:hint="현위치: 서울특별시 은평구 통일로 684" />
+=======
+                    android:background="@drawable/et_shape"
+                    android:hint="현위치: 서울 노원구 공릉동 123"
+                    android:padding="10dp" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
                 <EditText
                     android:id="@+id/et_endStation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/et_startStation"
+<<<<<<< HEAD
                     android:hint="성수역"
                     android:padding="10dp"
                     android:textSize="16dp"
@@ -59,17 +82,31 @@
             </RelativeLayout>
 
             <ImageButton
+=======
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_shape"
+                    android:hint="성수역"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+            <Button
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:id="@+id/switchStation"
                 android:layout_width="20dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
+<<<<<<< HEAD
                 android:layout_marginStart="3dp"
+=======
+                android:layout_marginLeft="10dp"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:background="@drawable/toggle" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
@@ -81,6 +118,17 @@
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
                 android:focusableInTouchMode="true"
+=======
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4887E7"
+                android:focusableInTouchMode="true"
+                android:paddingTop="5dp"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:src="@drawable/home" />
 
             <TextView
@@ -89,6 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 android:layout_toRightOf="@id/btnHome"
+<<<<<<< HEAD
                 android:gravity="bottom"
                 android:paddingTop="12dp"
                 android:text="집"
@@ -101,6 +150,19 @@
                 android:layout_height="48dp"
                 android:layout_toRightOf="@id/tvHome"
                 android:background="@android:color/transparent"
+=======
+                android:padding="10dp"
+                android:text="집"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <ImageButton
+                android:id="@+id/btnBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvHome"
+                android:background="#4887E7"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:focusableInTouchMode="true"
                 android:paddingTop="5dp"
                 android:src="@drawable/building" />
@@ -110,6 +172,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/btnBuilding"
+<<<<<<< HEAD
                 android:paddingTop="12dp"
                 android:text="회사"
                 android:textColor="@color/white"
@@ -125,14 +188,38 @@
                 android:paddingTop="6dp"
                 android:src="@drawable/ic_btn_roadsearch"
                 />
+=======
+                android:padding="10dp"
+                android:text="회사"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnRoadFind"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/road"
+                android:drawableTint="@color/white"
+                android:padding="5dp"
+                android:text="길찾기"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         </RelativeLayout>
     </LinearLayout>
 
     <ScrollView
+<<<<<<< HEAD
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible">
+=======
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -141,20 +228,38 @@
         android:orientation="vertical"
         android:padding="15dp">
 
+<<<<<<< HEAD
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+=======
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
                 <TextView
                     android:id="@+id/total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:layout_weight="1"
                     android:background="@drawable/shape"
                     android:padding="5dp"
                     android:layout_marginRight="5dp"
                     android:text="전체 43분"
+=======
+                    android:layout_column="1"
+                    android:background="@drawable/shape"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="전체 %s분"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                     android:textColor="@color/white"
                     android:textSize="15dp" />
 
@@ -162,24 +267,39 @@
                     android:id="@+id/btnBus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:background="@color/white"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/bus"
                     android:text="43분" />
+=======
+                    android:layout_column="2"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/bus"
+                    android:text="%s분" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
                 <Button
                     android:id="@+id/btnSubway"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:background="@color/white"
                     android:layout_weight="1"
                     android:drawableLeft="@drawable/subway"
                     android:text="30분" />
+=======
+                    android:layout_column="3"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/subway"
+                    android:text="%s분" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
                 <Button
                     android:id="@+id/btnTotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:layout_weight="1"
                     android:background="@color/white"
                     android:drawableLeft="@drawable/sum"
@@ -270,6 +390,14 @@
                     android:text="경로 선택하기"
                     android:textColor="@color/white" />
             </RelativeLayout>
+=======
+                    android:layout_column="4"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/sum"
+                    android:text="%s분" />
+            </TableRow>
+        </TableLayout>
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -277,15 +405,31 @@
             android:padding="20dp">
 
             <TextView
+<<<<<<< HEAD
                 android:id="@+id/tv_min2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="47분"
+=======
+                android:id="@+id/optimum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최적"
+                android:textColor="#4887E7" />
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/optimum"
+                android:text="3O분"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <TextView
+<<<<<<< HEAD
                 android:id="@+id/bus2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -420,11 +564,48 @@
 
             <Button
                 android:id="@+id/btnSelect3"
+=======
+                android:id="@+id/tv_startStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_min"
+                android:layout_marginTop="10dp"
+                android:text="태릉입구역" />
+
+            <TextView
+                android:id="@+id/tv_midStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_startStation"
+                android:layout_marginTop="20dp"
+                android:text="건대입구역1번출구" />
+
+            <TextView
+                android:id="@+id/tv_busNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_midStation"
+                android:text="2016" />
+
+            <TextView
+                android:id="@+id/tv_EndStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_busNumber"
+                android:paddingTop="10dp"
+                android:text="성수역1번출구 정류장" />
+
+            <Button
+                android:id="@+id/btnSelect"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:layout_width="wrap_content"
                 android:layout_height="37dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 android:background="@drawable/shape"
                 android:padding="10dp"
                 android:text="경로 선택하기"

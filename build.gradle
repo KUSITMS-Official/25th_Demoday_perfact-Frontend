@@ -6,4 +6,9 @@ plugins {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012

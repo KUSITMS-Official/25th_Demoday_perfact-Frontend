@@ -2,7 +2,10 @@ package com.example.per_fact.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 import androidx.fragment.app.Fragment;
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -20,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     LinearLayout home_layout;
     BottomNavigationView bottomNavigationView;
+<<<<<<< HEAD
     Fragment homeFragment,roadFragment,placeFragment, mypageFragment;
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.tab_home: {
+<<<<<<< HEAD
                     if (homeFragment == null) {
                         homeFragment = new HomeFragment();
                         getSupportFragmentManager().beginTransaction()
@@ -115,12 +122,36 @@ public class MainActivity extends AppCompatActivity {
 //                    getSupportFragmentManager().beginTransaction()
 //                            .replace(R.id.home_layout, new MypageFragment())
 //                            .commit();
+=======
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.home_layout, new HomeFragment())
+                            .commit();
+                    return true;
+                }
+                case R.id.tab_map: {
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.home_layout, new RoadFragment())
+                            .commit();
+                    return true;
+                }
+                case R.id.tab_place: {
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.home_layout, new PlaceFragment())
+                            .commit();
+                    return true;
+                }
+                case R.id.tab_mypage: {
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.home_layout, new MypageFragment())
+                            .commit();
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                     return true;
                 }
             }
             return false;
         }
     }
+<<<<<<< HEAD
     public void change_to_RoadFragment(){
         if (roadFragment == null) {
             roadFragment = new RoadFragment();
@@ -135,4 +166,6 @@ public class MainActivity extends AppCompatActivity {
         if(mypageFragment != null) getSupportFragmentManager().beginTransaction().hide(mypageFragment).commit();
     }
 
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 }

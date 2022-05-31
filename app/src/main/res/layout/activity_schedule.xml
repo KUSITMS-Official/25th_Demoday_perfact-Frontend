@@ -113,9 +113,13 @@
                     android:hint="시작 일자 선택"
                     android:paddingBottom="10dp"
                     android:layout_marginBottom="17dp"
+<<<<<<< HEAD
                     android:layout_marginRight="10dp"
                     android:textSize="15dp"
                     android:background="@drawable/edittext_bg"/>
+=======
+                    android:textSize="15dp" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
                 <Button
                     android:id="@+id/startTime"
@@ -124,8 +128,12 @@
                     android:hint="시작 시간 선택"
                     android:paddingBottom="10dp"
                     android:layout_marginBottom="17dp"
+<<<<<<< HEAD
                     android:textSize="15dp"
                     android:background="@drawable/edittext_bg" />
+=======
+                    android:textSize="15dp" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
 
             </LinearLayout>
@@ -141,8 +149,11 @@
                     android:layout_width="135dp"
                     android:layout_height="40dp"
                     android:hint="종료 일자 선택"
+<<<<<<< HEAD
                     android:layout_marginRight="10dp"
                     android:background="@drawable/edittext_bg"
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                     android:paddingBottom="10dp"
                     android:textSize="15dp" />
 
@@ -151,7 +162,10 @@
                     android:layout_width="135dp"
                     android:layout_height="40dp"
                     android:hint="종료 시간 선택"
+<<<<<<< HEAD
                     android:background="@drawable/edittext_bg"
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                     android:paddingBottom="10dp"
                     android:textSize="15dp" />
 
@@ -178,8 +192,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="예상 준비 시간을 선택해주세요."
+<<<<<<< HEAD
             android:textSize="18dp"
             android:background="@drawable/edittext_bg"/>
+=======
+            android:textSize="18dp" />
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
     </LinearLayout>
 
 
@@ -192,8 +210,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="25dp"
+<<<<<<< HEAD
             android:paddingRight="7dp"
             android:layout_marginTop="10dp"
+=======
+            android:paddingRight="5dp"
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
             app:srcCompat="@drawable/alarm"
             app:tint="#1C6BE2" />
 

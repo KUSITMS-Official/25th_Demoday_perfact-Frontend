@@ -2,7 +2,10 @@ package com.example.per_fact.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.List;
 
 import androidx.appcompat.app.AlertDialog;
@@ -34,6 +38,21 @@ public class CheckListActivity extends AppCompatActivity {
     ImageButton buttonInsert, btn_back;
     private ArrayList<CheckListDictionary> mArrayList, mArrayList_check;
     private com.example.per_fact.Adapter.CheckListCustomAdapter mAdapter;
+=======
+import androidx.appcompat.app.AlertDialog;
+
+import com.example.per_fact.Adapter.CheckListCustomAdapter;
+import com.example.per_fact.R;
+
+
+public class CheckListActivity extends AppCompatActivity {
+    ImageButton buttonInsert;
+    ImageButton btn_back;
+
+    private ArrayList<CheckListDictionary> mArrayList;
+    private ArrayList<CheckListDictionary> mArrayList_check;
+    private CheckListCustomAdapter mAdapter;
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
     private int count = -1;
 
     @Override
@@ -41,6 +60,7 @@ public class CheckListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_list);
 
+<<<<<<< HEAD
         //리싸이클러 뷰 설정
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_main_list);
         LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this);
@@ -52,6 +72,22 @@ public class CheckListActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(mRecyclerView.getContext(), mLinearLayoutManager.getOrientation());
+=======
+        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_main_list);
+        LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLinearLayoutManager);
+
+
+        mArrayList = new ArrayList<>();
+
+        //mAdapter = new CustomAdapter( mArrayList);
+        mAdapter = new CheckListCustomAdapter( this, mArrayList);
+        mRecyclerView.setAdapter(mAdapter);
+
+
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(mRecyclerView.getContext(),
+                mLinearLayoutManager.getOrientation());
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         mRecyclerView.addItemDecoration(dividerItemDecoration);
 
         //메인에서 체크리스트 받아와 화면에 출력
@@ -59,6 +95,7 @@ public class CheckListActivity extends AppCompatActivity {
         Intent intent = getIntent();
         mArrayList_check = intent.getParcelableArrayListExtra("checklist");
         for (int i = 0; i < mArrayList_check.size(); i++) {
+<<<<<<< HEAD
 
             String item = mArrayList_check.get(i).getId();
             Boolean checked = mArrayList_check.get(i).isSelected();
@@ -74,6 +111,18 @@ public class CheckListActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         CheckListService checkListService = retrofit.create(CheckListService.class);
+=======
+            String item = mArrayList_check.get(i).getId();
+
+            CheckListDictionary dict = new CheckListDictionary(item);
+
+            mArrayList.add(0, dict); //첫 줄에 삽입
+            //mArrayList.add(dict); //마지막 줄에 삽입
+            mAdapter.notifyDataSetChanged(); //변경된 데이터를 화면에 반영
+
+        }
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
 
 
         buttonInsert = (ImageButton)findViewById(R.id.button_main_insert);
@@ -89,6 +138,11 @@ public class CheckListActivity extends AppCompatActivity {
                 builder.setView(view);
                 final Button ButtonSubmit = (Button) view.findViewById(R.id.button_dialog_submit);
                 final EditText editTextID = (EditText) view.findViewById(R.id.edittext_dialog_id);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 ButtonSubmit.setText("확인");
 
 
@@ -97,6 +151,7 @@ public class CheckListActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         String strID = editTextID.getText().toString();
 
+<<<<<<< HEAD
 //                        //Api 호출(POST)
 //                        CheckListData checkListData = new CheckListData(0, strID, "false");
 //                        checkListService.postCheckList(checkListData).enqueue(new Callback<CheckListData>() {
@@ -124,6 +179,14 @@ public class CheckListActivity extends AppCompatActivity {
                         CheckListDictionary dict = new CheckListDictionary(strID,checked);
                         mArrayList.add(dict); //마지막 줄에 삽입
                         mAdapter.notifyDataSetChanged(); //변경된 데이터를 화면에 반영
+=======
+                        CheckListDictionary dict = new CheckListDictionary(strID);
+
+                        mArrayList.add(0, dict); //첫 줄에 삽입
+                        //mArrayList.add(dict); //마지막 줄에 삽입
+                        mAdapter.notifyDataSetChanged(); //변경된 데이터를 화면에 반영
+
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                         dialog.dismiss();
                     }
                 });
@@ -132,18 +195,25 @@ public class CheckListActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
         //뒤로가기 버튼 클릭시
         btn_back = (ImageButton) findViewById(R.id.Check_list_back_btn);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
 
                 //체크박스 상태를 배열에 담아 전달
+=======
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
                 Intent data = new Intent();
                 data.putParcelableArrayListExtra("checklist", mArrayList);
                 setResult(0,data);
 
+<<<<<<< HEAD
                 checkListService.getAllData(1).enqueue(new Callback<List<CheckListData>>() {
                     @Override
                     public void onResponse(Call<List<CheckListData>> call, Response<List<CheckListData>> response) {
@@ -166,6 +236,9 @@ public class CheckListActivity extends AppCompatActivity {
                 finish();
 
 
+=======
+                finish();
+>>>>>>> d0f3f43876eb9cb8916071aef217cd59b7e3a012
             }
         });
     }
